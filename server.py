@@ -35,10 +35,10 @@ class MyHTTPRequestHandler(http.server.SimpleHTTPRequestHandler):
             if not os.path.exists(DATA_FILE):
                 default = {
                     "numbers": [
-                        {"name": "Shehan", "picked_by": None},
-                        {"name": "Shehani", "picked_by": None},
-                        {"name": "Sonal", "picked_by": None},
-                        {"name": "Shamen", "picked_by": None}
+                        {"name": "Person1", "picked_by": None},
+                        {"name": "Person2", "picked_by": None},
+                        {"name": "Person3", "picked_by": None},
+                        {"name": "Person4", "picked_by": None}
                     ]
                 }
                 with open(DATA_FILE, "w", encoding="utf-8") as f:

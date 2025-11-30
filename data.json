@@ -1,20 +1,20 @@
 {
   "numbers": [
     {
-      "name": "Shehan",
-      "picked_by": "212.104.229.104"
+      "name": "Person1",
+      "picked_by": null
     },
     {
-      "name": "Shehani",
-      "picked_by": "45.121.88.207"
+      "name": "Person2",
+      "picked_by": null
     },
     {
-      "name": "Sonal",
-      "picked_by": "213.207.159.190"
+      "name": "Person3",
+      "picked_by": null
     },
     {
-      "name": "Shamen",
-      "picked_by": "175.157.123.133"
+      "name": "Person4",
+      "picked_by": null
     }
   ]
 }
