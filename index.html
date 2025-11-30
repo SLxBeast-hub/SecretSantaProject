@@ -1,34 +1,47 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Secret Santa Game</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Secret Santa Name Drawing</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="app">
+    <header>
+      <div class="logo">🎅</div>
+      <div class="title">
+        <h1>Secret Santa Name Drawing</h1>
+        <p class="subtitle">Pick a number to reveal your recipient — one pick per device (IP).</p>
+      </div>
+    </header>
 
-<h1>🎄 Secret Santa Game 🎄</h1>
-<p>Click a number and enter the secret passcode to see your gift recipient!</p>
+    <main>
+      <div id="grid" class="grid"></div>
+    </main>
 
-<div class="grid">
-  <div class="number-box" id="box0" data-index="0">1</div>
-  <div class="number-box" id="box1" data-index="1">2</div>
-  <div class="number-box" id="box2" data-index="2">3</div>
-  <div class="number-box" id="box3" data-index="3">4</div>
-</div>
+    <!-- modal -->
+    <div id="modal" class="modal" aria-hidden="true">
+      <div class="modal-inner">
+        <div id="modalBody" class="modal-body"></div>
+        <button id="modalClose" class="btn">Close</button>
+      </div>
+    </div>
 
-<div id="modal">
-  <div id="modalContent">
-    <div id="modalText">Enter passcode:</div>
-    <input type="password" id="passInput" placeholder="Passcode">
-    <br>
-    <button id="confirmBtn">Confirm</button>
+    <div id="toast" class="toast">Ew ew cheater 😂</div>
+
+    <!-- cheater popup -->
+    <div id="cheaterPopup" class="cheater-popup">
+      <div class="cheater-popup-inner">
+        <div class="cheater-emoji">😂</div>
+        <div class="cheater-text">ew ew cheater 😂</div>
+        <button id="cheaterOkBtn" class="btn cheater-btn">Okay</button>
+      </div>
+    </div>
   </div>
-</div>
 
-<div id="cheat">Ew ew cheater 😂</div>
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
+  
+  <div class="footer">Created by SLxBeast</div>
 </body>
 </html>
