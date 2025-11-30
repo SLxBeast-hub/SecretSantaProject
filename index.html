@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Secret Santa Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>🎄 Secret Santa Game 🎄</h1>
+<p>Click a number and enter the secret passcode to see your gift recipient!</p>
+
+<div class="grid">
+  <div class="number-box" id="box0" data-index="0">1</div>
+  <div class="number-box" id="box1" data-index="1">2</div>
+  <div class="number-box" id="box2" data-index="2">3</div>
+  <div class="number-box" id="box3" data-index="3">4</div>
+</div>
+
+<div id="modal">
+  <div id="modalContent">
+    <div id="modalText">Enter passcode:</div>
+    <input type="password" id="passInput" placeholder="Passcode">
+    <br>
+    <button id="confirmBtn">Confirm</button>
+  </div>
+</div>
+
+<div id="cheat">Ew ew cheater 😂</div>
+
+<script src="script.js"></script>
+</body>
+</html>
